@@ -1,0 +1,4 @@
+employer1 name|city, state|job title|job description|required experience|pay rate expected
+employer2 name|city, state|job title|job description|required experience|pay rate expected
+employer3 name|city, state|job title|job description|required experience|pay rate expected
+employer3 name|city, state|job title|job description|required experience|pay rate expected

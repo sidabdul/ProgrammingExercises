@@ -1,0 +1,82 @@
+#include <iostream>
+#include <cstring>
+#include <cctype>
+
+using namespace std;
+
+const int TEST = 375;
+
+
+   class node
+   {
+      public :
+      
+      node();
+      ~node();
+      int insert(node * & list, int val);
+      int display(node * list);
+
+      protected :
+     
+      int data; 
+      node * next; 
+   
+   };
+
+
+
+
+node::node()
+{
+
+  next = NULL;
+
+}
+
+
+int node::insert(node * & list, int val)
+{
+   if(!list)
+   {
+   
+   node * temp = new node; 
+   temp -> data = val;   
+   temp -> next = NULL; 
+   temp = list;
+   }
+
+}
+
+
+int node::display(node * list)
+{
+
+  node * current = list;
+  while(current)
+  {
+    cout << current -> data;
+    current = current -> next;
+  }
+
+}
+
+
+
+int main()
+{
+
+
+ 
+  node * ptr;
+  
+  node * head = NULL;
+
+  ptr -> insert(head, 100);
+  ptr -> display(head);
+
+
+  //cout << ptr -> data;
+
+}
+
+
